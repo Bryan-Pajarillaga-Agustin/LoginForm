@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('images/background1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    transition: all .5s;
+}
+li{
+    list-style: none;
+    padding: 5px 50px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: #3f3c36d5;
+    cursor: pointer;
+    transition: color .5s, background-color .5s;
+}
+li:hover{
+    background-color: #ff5100;
+    color: black;
+}
+.Main-Container{
+    width: 100%;
+    height: fit-content;
+}
+.header{
+    width: 100%;
+    height: fit-content;
+}
+.header .Top-header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #09e8a198;
+    justify-content: space-between;
+}
+.header .Top-header .Right-Actions,
+.header .Top-header .Left-Actions
+{
+    display: flex;
+    align-items: center;
+}
+.header .Top-header .Right-Actions .Top-Icons{
+    border-radius: 100%;
+    border: 5px solid black;
+    margin: 0px 5px;
+    transition: all .3s;
+    cursor: pointer;
+}.header .Top-header .Right-Actions .Top-Icons:hover{
+    width: 55px;
+    height: 55px;
+}
+
+
+/* Bottom Header Style */
+
+.Bottom-header{
+    width: 100%;
+    height: fit-content;
+    background-color: #005eff9e;
+    display: flex;
+    justify-content: center;
+}
+.Bottom-header ul{
+    display: flex;
+}
+
+
+/* Main Content */
+.First{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    
+}
+.Main-Content{
+    margin: 0px 5px;
+    margin-top: 10px;
+    width: 650px;
+    height: 700px;
+    border: 5px solid rgb(149, 0, 255);
+    border-radius: 20px;
+    background-color: #5500ffe1;
+}
+.Right-Actions-Tabs{
+    margin-top: 10px;
+    width: fit-content;
+    height: fit-content; 
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+}
+.Right-Actions-Tabs ul li{
+    width: 100px;
+    text-align: center;
+    background-color: #00ffff4f;
+    font-size: 20px;
+    color: black;
+    padding: 14px 40px;
+    border: 0px;
+}
+.Right-Actions-Tabs ul li:hover{
+    background-color: #5500ffe1;
+    color: aqua;
+}
+
+/* Login Box Styles */
+.Sign-Log{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 50px;
+    width: fit-content;
+    font-style: oblique;
+}
+.LoginBox{
+    display: none;
+    border-radius: 30px;
+    background: linear-gradient(215deg, #09e8a1, #6aff00);
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    align-items:center;
+    justify-content: center;
+}
+.LoginBox .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.LoginBox .inputLogin {
+    border: 0px;
+    border-bottom: 5px solid black;
+    background: transparent;
+    width: 300px;
+    height: fit-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+.LoginBox .inputLogin:focus {
+    outline: none;
+}
+.LoginBox .CPass{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.LoginBox .CPass #SeePassword{
+    width: 20px;
+    height: 20px;
+}
+.LoginBox #LoginButton {
+    border: 0px;
+    border-radius: 20px;
+    background-color: #3f3c36d5;
+    font-weight: 700;
+}
+.LoginBox .OptionSignUp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #111111e1;
+}
+.LoginBox .OptionSignUp #Create{
+    cursor: pointer;
+}
+.LoginBox .OptionSignUp #Create:active{
+    color: blue;
+}
+
+/* SignUp Box Styles */
+
+.SigninBox .SignInForm{
+    display: none;
+    border-radius: 30px;
+    background: linear-gradient(215deg, #09e8a1, #6aff00);
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    align-items:center;
+    justify-content: center;
+}
+.SignInForm .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.SigninBox .inputSign{
+    border: 0px;
+    border-bottom: 3px solid black;
+    background: transparent;
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+.inputSign:focus{
+    outline: none;
+}
+.SigninBox #SignUp{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #d0cbc1d5;
+    margin-top: 20px;
+}
+.inputSign{
+    margin: 10px 0px 0px 0px;
+}
+.SigninBox .OptionSignUp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #111111e1;
+}
+.SigninBox .OptionSignUp #Create{
+    cursor: pointer;
+}
+.SigninBox .OptionSignUp #Create:active{
+    color: blue;
+}
+
+/* User Information fill up Style */
+
+.SigninBox .UserForm{
+    display: none;
+    border-radius: 30px;
+    background: linear-gradient(215deg, #09e8a1, #6aff00);
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+}
+.UserForm .profilePic {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 20px 40px;
+}
+.SigninBox .UserForm #profiledis{
+    border-radius: 100%;
+    background-image: url(Logos/NoProf.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    width: 120px;
+    height: 120px;
+}
+.UserForm #ProfPicButton label{
+    background: transparent;
+}
+.UserForm #ProfPicButton{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 20px;
+    color: black;
+    border: 0px;
+    border-radius: 16px;
+    background-color: #e809e8;
+    padding: 12px;
+    transform: translateX(20px);
+}
+.Infos{
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid black;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    justify-content: center;
+    gap: 30px;
+}
+.Infos .infoInputs{
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    width: 150px;
+    height: 20px;
+    background: transparent;
+    margin: 0px 10px;
+}
+#Proceed{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 16px;
+    color: black;
+    border: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #606766cd;
+    height: 60px;
+}
+
+/* details styles */
+
+.back{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 900;
+    border: 0px;
+    background: transparent;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 30px;
+}
+.back:hover{
+    background-color: #6b6e6e4f;
+    align-items: center;
+    text-align: center;
+    
+}

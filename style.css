@@ -1,0 +1,67 @@
+.base {
+    width: 50px;
+    height: 20px;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.739);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+}
+.on{
+    background-color: black;
+} 
+.off{
+    background-color: rgba(0, 0, 0, 0.739);
+}
+.base .circle {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    transition: all 1s;
+}
+.Go-Right{
+    transform: translateX(30px);
+    animation: ease;
+    animation-name: going-right;
+    animation-duration: 1s;
+    background-color: black;
+}
+.Go-Left{
+    background-color: white;
+    animation: ease;
+    animation-name: going-left;
+    animation-duration: 1s;
+}
+@keyframes going-right{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(30px);
+    }
+}
+@keyframes going-left {
+    from{
+        transform: translateX(30px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.violation{
+    font-size: 10px;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 300px;
+    text-align: left;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+button:focus{
+    opacity: .9;
+}

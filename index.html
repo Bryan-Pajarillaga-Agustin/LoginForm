@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fourth Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+
+    <div class="Main-Container">
+        <div class="header">
+            <div class="Top-header">
+                <div class="Left-Actions">
+                    <img src="Logos/MyLogo.png" width="80" height="80" id="WebIcon">
+                    <h2>WebDev</h2>
+                </div>
+                <div class="Right-Actions">
+                    <div class="base off" style="margin: 0px 5px;" onclick="SwitchTo()">
+                        <div class="circle Go-Left"></div>
+                    </div>
+                    <img src="images/Html.png" width="40" height="40" class="Top-Icons" onclick="">  
+                    <img src="images/Css.jpg" width="40" height="40" class="Top-Icons" onclick="">  
+                    <img src="images/Javascript.png" width="40" height="40" class="Top-Icons" onclick="">
+                    <img src="Logos/NoProf.jpg" id="ProfileIcon-None" width="40" height="40" class="Top-Icons" onclick="LoginForm(0)">
+                    <img src="Logos/NoProf.jpg" id="ProfileIcon" width="40" height="40" style="display: none;" class="Top-Icons" onclick="LoginForm(1)">
+                </div>
+            </div>
+            <div class="Bottom-header">
+                <ul>
+                    <li>Lessons</li>
+                    <li>Quizes</li>
+                    <li>Contacts</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+
+            <!-- Main Content -->
+
+        <div class="First">
+            <div class="Right-Actions-Tabs">
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="Main-Content">
+
+            </div>
+        </div>
+        
+    </div>
+        <!-- Login Box -->
+    <div class="LoginBox" id="logBox">
+        <button class="back" id="backLogin">&nbsp;←</button>
+        <h1 class="Sign-Log"> Log In </h1>
+        <input type="text" id="Username" placeholder="Username" style="margin-bottom: 20px;" class="inputLogin">
+        <input type="password" id="Password" placeholder="Password" class="inputLogin">
+        <div class="CPass"><input type="checkbox" id="SeePassword"><label for="SeePassword">See Password</label></div>
+        <button id="LoginButton" class="inputLogin" onclick="PressedLogIn()">Login</button> 
+        <div class="OptionSignUp">Doesn't Have An Account? <u id="Create" onclick="SignIn()">Create Account</u></div>
+    </div>
+        <!-- User Options -->
+
+    <div class="RightActionUsers">
+        <button class="back" id="Back">&nbsp;←</button>
+        <button id="LogOut" onclick="LogOut()">Log Out</button>
+    </div>
+
+        <!-- Sign In Box -->
+    <div class="SigninBox">
+        <div class="SignInForm">
+            <button class="back" id="backSign">&nbsp;←</button>
+            <h1 class="Sign-Log"> Sign In </h1>
+            <input type="text" placeholder="Username" style="margin-bottom: 20px;" id="createuser" class="inputSign">
+            <span class="violation" id="violation0"></span>
+            <input type="password" placeholder="Password" style="margin-bottom: 20px;" id="createpass" class="inputSign">
+            <span id="violation1" class="violation"></span>
+            <input type="password" id="confirm" style="margin-bottom: 20px;" placeholder="Confirm Password" class="inputSign">
+            <span id="violation2" class="violation"></span>
+            <button id="SignUp" onclick="SignUp()">Create Account</button>
+            <div class="OptionSignUp">Already Have an Account? <u id="Create" onclick="LoginForm()">Log In</u></div>
+        </div>
+        <div class="UserForm">
+            <button class="back" id="backUser">&nbsp;←</button>
+            <div class="profilePic">
+                <label for="ProfileInput" id="profiledis"></label>
+                <button id="ProfPicButton"><label for="ProfileInput">Choose A Photo</label></button>
+                <input type="file" id="ProfileInput" onchange="ChangeProfile(event)" style="display: none;">
+            </div>
+            <div class="Infos">
+                <div class="left">
+                    <input type="text" id="Name" class="infoInputs" placeholder="Name">
+                    <input type="text" id="Age" class="infoInputs" placeholder="Age">
+                </div>
+                <div class="right">
+                    <input type="text" id="Section" class="infoInputs" placeholder="Section">
+                    <input type="date" id="Birthday" class="infoInputs" placeholder="Birthday">
+                </div>
+            </div>
+            <button id="Proceed" onclick="Proceed()">Proceed</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
